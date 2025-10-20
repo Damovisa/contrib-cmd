@@ -6,6 +6,7 @@ A command-line tool that fetches and displays a GitHub user's contribution graph
 
 - Fetches contribution data from GitHub's API
 - Displays contributions in a visual ASCII graph with density-based characters
+- Uses GitHub-style green colors (dark gray to bright green) to represent contribution levels
 - Shows month labels and weekday indicators
 - Displays total contributions and date range
 - Supports both command-line argument and interactive prompt modes
@@ -38,13 +39,13 @@ The script will prompt you to enter a GitHub username.
 
 ## ASCII Representation
 
-The contribution graph uses characters with increasing density to represent different contribution levels:
+The contribution graph uses characters with increasing density and GitHub-style green colors to represent different contribution levels:
 
-- ` ` (space) = Level 0 (no contributions)
-- `░` = Level 1 (low contributions)
-- `▒` = Level 2 (moderate contributions)
-- `▓` = Level 3 (high contributions)
-- `█` = Level 4 (very high contributions)
+- `·` (dot) = Level 0 (no contributions) - Dark gray
+- `░` = Level 1 (low contributions) - Dark green
+- `▒` = Level 2 (moderate contributions) - Medium-dark green
+- `▓` = Level 3 (high contributions) - Medium-bright green
+- `█` = Level 4 (very high contributions) - Bright green
 
 ## Example Output
 
